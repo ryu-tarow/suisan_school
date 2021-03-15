@@ -5,5 +5,5 @@ export { ListTitle } from "components/UIkit/ListTitle";
 export { Club } from "components/UIkit/Club";
 export { PageTitle } from "components/UIkit/PageTitle";
 export { SchoolData } from "components/UIkit/SchoolData";
-export { PhotoCard } from "components/UIkit/photoCard";
+export { PhotoCard } from "components/UIkit/PhotoCard";
 export { SchoolLink } from "components/UIkit/SchoolLink";
