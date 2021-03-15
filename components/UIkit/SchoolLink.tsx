@@ -20,7 +20,7 @@ export const SchoolLink = ({
           {title}
         </h4>
         <img
-          className="w-screen h-28 sm:h-48 object-cover border border-gray-400"
+          className="w-screen h-28 sm:h- object-cover border border-gray-400"
           src={img}
         />
         <p className="p-2 text-xs text-gray-600 border border-gray-400 rounded-md rounded-t-none">

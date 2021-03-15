@@ -13,7 +13,7 @@ export default function Fukuoka() {
   const url = "";
   return (
     <>
-      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
+      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"福岡県立水産高等学校"} />
 
@@ -22,8 +22,8 @@ export default function Fukuoka() {
             <SchoolData
               topImage={"/school/fukuoka/fukuoka_top.png"}
               address={"福岡県福津市津屋崎4丁目46-14"}
-                          station={"JR福間駅"}
-                          deviationValue={40}
+              station={"JR福間駅"}
+              deviationValue={40}
             />
           </div>
 

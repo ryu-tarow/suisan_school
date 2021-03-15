@@ -5,7 +5,12 @@ interface SchoolDataProps {
   deviationValue: number;
 }
 
-export const SchoolData = ({ topImage, address, station,deviationValue }: SchoolDataProps) => {
+export const SchoolData = ({
+  topImage,
+  address,
+  station,
+  deviationValue,
+}: SchoolDataProps) => {
   return (
     <>
       <img
