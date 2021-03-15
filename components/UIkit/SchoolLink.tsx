@@ -15,15 +15,15 @@ export const SchoolLink = ({
 }: SchoolLinkProps) => {
   return (
     <Link href={link}>
-      <div className="m-1 hover:opacity-80 duration-300 cursor-pointer">
-        <h4 className="px-4 py-1 bg-gray-600 text-white rounded-md rounded-b-none">
+      <div className="m-1 hover:opacity-80 duration-300 cursor-pointer relative">
+        <h4 className="absolute w-full opacity-60 px-4 py-1 bg-black text-white">
           {title}
         </h4>
         <img
-          className="w-screen h-28 sm:h- object-cover border border-gray-400"
+          className="w-screen h-32 object-cover"
           src={img}
         />
-        <p className="p-2 text-xs text-gray-600 border border-gray-400 rounded-md rounded-t-none">
+        <p className="p-2 text-xs text-gray-600 shadow-md">
           {description}
         </p>
       </div>

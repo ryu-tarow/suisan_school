@@ -57,17 +57,19 @@ export default function Home() {
           <PageTitle text={"HOME"} />
           <div className="bg-white p-2 shadow-md rounded-md mb-5">
             <div>
-              <ListTitle text={"水産高校"} />
               <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
                 <SchoolLink
-                  link={"/school/fukuoka"}
+                  link={"/school"}
                   img={"/school/fukuoka/fukuoka_top.png"}
-                  title={"福岡水産高校"}
-                  description={"海のすぐ隣にある、福岡県の水産高校。"}
+                  title={"水産高校"}
+                  description={"全国の水産高校一覧"}
                 />
-              </div>
-              <div>
-                <ListTitle text={"有名人"} />
+                <SchoolLink
+                    link={"/famous"}
+                    img={"/ohya.jpg"}
+                    title={"有名人"}
+                    description={"有名人一覧"}
+                  />
               </div>
             </div>
           </div>
