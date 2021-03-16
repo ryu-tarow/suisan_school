@@ -43,9 +43,19 @@ export default function Famous() {
         <ShareButton text={text} url={url} />
         <PageTitle text={"有名人"} />
         <div className="bg-white p-2 shadow-md rounded-md mb-5">
-          <div className="flex">
-          <img src="/ohya.jpg" className="w-40" />
-          大家 志津香
+          <div className="grid sm:grid-cols-2 shadow-md rounded-md
+          ">
+            <img src="/ohya.jpg" className="w-full sm:w-80 h-56 object-cover p-2 rounded-xl" />
+            <div className="px-3 pb-4 text-center sm:text-left">
+              <p className="text-xs text-gray-400">name</p>
+              <h3 className="text-lg">大家 志津香</h3>
+              <p className="text-xs text-gray-400">born</p>
+              <p>1991年 12月28日</p>
+              <p className="text-xs text-gray-400">office</p>
+              <p>AKB48チームB</p>
+              <p className="text-xs text-gray-400">school</p>
+              <p>福岡水産高校 中退</p>
+              </div>
             </div>
         </div>
       </div>

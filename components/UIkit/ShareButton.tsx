@@ -16,7 +16,7 @@ interface Props {
 
 export const ShareButton = ({ text, url }: Props) => {
   return (
-    <ul className="mt-1 mr-2 flex justify-end">
+    <ul className="mt-1 flex justify-end">
       <li className=" m-0.5 duration-300 hover:opacity-70">
         <TwitterShareButton url={url} title={text}>
           <TwitterIcon size={32} round={false} />
