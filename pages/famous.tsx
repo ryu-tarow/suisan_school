@@ -1,4 +1,5 @@
 import {
+  FamousCard,
   ListTitle,
   PageTitle,
   SchoolLink,
@@ -43,20 +44,22 @@ export default function Famous() {
         <ShareButton text={text} url={url} />
         <PageTitle text={"有名人"} />
         <div className="bg-white p-2 shadow-md rounded-md mb-5">
-          <div className="grid sm:grid-cols-2 shadow-md rounded-md
-          ">
-            <img src="/ohya.jpg" className="w-full sm:w-80 h-56 object-cover p-2 rounded-xl" />
-            <div className="px-3 pb-4 text-center sm:text-left">
-              <p className="text-xs text-gray-400">name</p>
-              <h3 className="text-lg">大家 志津香</h3>
-              <p className="text-xs text-gray-400">born</p>
-              <p>1991年 12月28日</p>
-              <p className="text-xs text-gray-400">office</p>
-              <p>AKB48チームB</p>
-              <p className="text-xs text-gray-400">school</p>
-              <p>福岡水産高校 中退</p>
-              </div>
-            </div>
+          <FamousCard
+            img={"/famous/ohya.jpg"}
+            team={"AKB48 チームB"}
+            famousName={"大家 志津香"}
+            born={"1991年12月28日"}
+            office={"ナベプロ"}
+            school={"福岡県立水産高校 中退"}
+          />
+          <FamousCard
+            img={"/famous/muramoto.jpg"}
+            team={"ウーマンラッシュアワー"}
+            famousName={"村本 大輔"}
+            born={"1980年11月25日"}
+            office={"吉本興業"}
+            school={"福井県立小浜水産高校 中退"}
+          />
         </div>
       </div>
     </>

@@ -7,3 +7,4 @@ export { PageTitle } from "components/UIkit/PageTitle";
 export { SchoolData } from "components/UIkit/SchoolData";
 export { PhotoCard } from "components/UIkit/PhotoCard";
 export { SchoolLink } from "components/UIkit/SchoolLink";
+export { FamousCard } from "components/UIkit/FamousCard";

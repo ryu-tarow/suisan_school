@@ -44,42 +44,41 @@ export default function School() {
           <ShareButton text={text} url={url} />
           <PageTitle text={"全国の水産高校"} />
           <div className="bg-white p-2 shadow-md rounded-md mb-5">
-            {/* <div>
-            <ListTitle text={"北海道地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"東北地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"関東地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"中部地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"近畿地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"中国地方"} />
-            <p className="px-4 py-2">---</p>
-          </div>
-          <div>
-            <ListTitle text={"四国地方"} />
-            <p className="px-4 py-2">---</p>
-          </div> */}
+            {/*
+             **北海道地方**
+             **東北地方**
+             **関東地方**
+             **中部地方**
+             **近畿地方**V
+             **中国地方**
+             **四国地方**
+             **九州地方**V
+             */}
+            <div>
+              <ListTitle text={"近畿地方"} />
+              <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
+                <SchoolLink
+                  link={"/school/hyogo"}
+                  img={"/school/hyogo/top.png"}
+                  title={"兵庫県立香住高校"}
+                  description={"---"}
+                />
+              </div>
+            </div>
             <div>
               <ListTitle text={"九州地方"} />
               <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
                 <SchoolLink
                   link={"/school/fukuoka"}
-                  img={"/school/fukuoka/fukuoka_top.png"}
-                  title={"福岡水産高校"}
+                  img={"/school/fukuoka/top.png"}
+                  title={"福岡県立水産高校"}
                   description={"海のすぐ隣にある、福岡県の水産高校。"}
+                />
+                <SchoolLink
+                  link={"/school/okinawa"}
+                  img={"/school/okinawa/top.png"}
+                  title={"沖縄県立水産高校"}
+                  description={"--"}
                 />
               </div>
             </div>

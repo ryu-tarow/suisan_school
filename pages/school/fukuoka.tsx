@@ -16,7 +16,7 @@ export default function Fukuoka() {
   const title = "SUISAN"; //サイトタイトル
   const image = "top.jpg"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
-  const description = "水産高校総合情報サイト｜全国の水産高校"; //SNSなどで表示される説明
+  const description = "水産高校総合情報サイト｜福岡県立水産高校"; //SNSなどで表示される説明
 
   return (
     <>
@@ -55,7 +55,7 @@ export default function Fukuoka() {
         <div className="bg-white p-1 rounded-md mb-1 shadow-md">
           <div className="grid sm:grid-cols-2 mx-2 mb-2 mt-1">
             <SchoolData
-              topImage={"/school/fukuoka/fukuoka_top.png"}
+              topImage={"/school/fukuoka/top.png"}
               address={"福岡県福津市津屋崎4丁目46-14"}
               station={"JR福間駅"}
               deviationValue={40}
@@ -71,6 +71,7 @@ export default function Fukuoka() {
               subject={"海洋科"}
               list01={"航海コース"}
               list02={"機関コース"}
+              list03={""}
             />
             <Subject
               img={
@@ -79,6 +80,7 @@ export default function Fukuoka() {
               subject={"海洋科"}
               list01={"マリン技術コース"}
               list02={"--"}
+              list03={""}
             />
             <Subject
               img={
@@ -87,6 +89,7 @@ export default function Fukuoka() {
               subject={"食品流通科"}
               list01={"食品開発コース"}
               list02={"流通科学コース"}
+              list03={""}
             />
             <Subject
               img={
@@ -95,6 +98,7 @@ export default function Fukuoka() {
               subject={"アクアライフ科"}
               list01={"バイオ技術コース"}
               list02={"漁業経営コース"}
+              list03={""}
             />
           </ul>
           <br />
@@ -128,7 +132,7 @@ export default function Fukuoka() {
               }
               title={"プロジェクト-T"}
               description={
-                "アクアライフ科で取り組んでいる、竹を使った海の再生プロジェクト"
+                "アクアライフ科で取り組んでいる、竹を使った海の再生プロジェクト。"
               }
             />
           </div>
