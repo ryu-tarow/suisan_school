@@ -70,6 +70,12 @@ export default function Home() {
                   title={"有名人"}
                   description={"有名人一覧"}
                 />
+                <SchoolLink
+                  link={"/ship"}
+                  img={"/ship/kaiyumaru.jpg"}
+                  title={"実習船"}
+                  description={"実習船一覧"}
+                />
               </div>
             </div>
           </div>

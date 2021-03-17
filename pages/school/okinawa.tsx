@@ -87,16 +87,13 @@ export default function Okinawa() {
               list03={"人文・自然教養系列"}
             />
           </ul>
-          <p className="text-center text-sm mt-2 text-gray-500">*総合学科は9つの系列の中から専門科目を選ぶ。</p>
+          <p className="text-center text-sm mt-2 text-gray-500">
+            *総合学科は9つの系列の中から専門科目を選ぶ。
+          </p>
           <br />
           <ListTitle text={"部活動"} />
           <ul className="p-2 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6">
-            <Club
-              clubName={"--"}
-              img={
-                "/noImage.png"
-              }
-            />
+            <Club clubName={"--"} img={"/noImage.png"} />
           </ul>
           {/* <br />
           <ListTitle text={"特別活動"} />
