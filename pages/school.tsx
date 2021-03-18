@@ -1,4 +1,5 @@
 import {
+    BackButton,
   ListTitle,
   PageTitle,
   SchoolLink,
@@ -38,7 +39,8 @@ export default function School() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`${url}/${image}`} />
-      </Head>
+          </Head>
+          <BackButton link={"/school"}/>
       <main>
         <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
           <ShareButton text={text} url={url} />
@@ -48,12 +50,23 @@ export default function School() {
              **北海道地方**
              **東北地方**
              **関東地方**
-             **中部地方**
+             **中部地方**V
              **近畿地方**V
              **中国地方**
              **四国地方**
              **九州地方**V
              */}
+            <div>
+              <ListTitle text={"中部地方"} />
+              <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
+                <SchoolLink
+                  link={"/school/fukui"}
+                  img={"/school/fukui/top.png"}
+                  title={"福井県立若狭高校"}
+                  description={"2013年、福井県立小浜水産高校と統合。"}
+                />
+              </div>
+            </div>
             <div>
               <ListTitle text={"近畿地方"} />
               <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">

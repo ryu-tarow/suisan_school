@@ -6,6 +6,7 @@ import {
   ShareButton,
   Subject,
   PhotoCard,
+  BackButton,
 } from "components/UIkit";
 import Head from "next/head";
 
@@ -33,15 +34,16 @@ export default function Okinawa() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`https://suisan.ml/${image}`} />
+        <meta property="og:image" content={`https://suisan.ml/school/${image}`} />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
 
         {/* TwitterCardの設定 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
-        <meta property="twitter:image" content={`https://suisan.ml/${image}`} />
+        <meta property="twitter:image" content={`https://suisan.ml/school/${image}`} />
       </Head>
+      <BackButton link={"/school"}/>
       <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"沖縄県立沖縄水産高等学校"} />

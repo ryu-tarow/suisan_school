@@ -36,44 +36,9 @@ export default function Famous() {
       </Head>
       <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
         <ShareButton text={text} url={url} />
-        <PageTitle text={"実習船"} />
+        <PageTitle text={"就職先"} />
         <div className="bg-white p-2 shadow-md rounded-md mb-5">
-          <ShipCard
-            shipName={"海友丸"}
-            img={"ship/kaiyumaru.jpg"}
-            owned={"長崎・福岡・山口"}
-            made={"長崎造船"}
-            build={"2010年3月30日"}
-            meter={"67.74m"}
-            weight={"698t"}
-          />
-          <ShipCard
-            shipName={"薩摩青雲丸"}
-            img={"ship/satumaseiun.png"}
-            owned={"鹿児島"}
-            made={"新潟鐵工所"}
-            build={"2002年3月15日"}
-            meter={"64.25m"}
-            weight={"645t"}
-          />
-          <ShipCard
-            shipName={"但州丸（6代目）＊写真は5代目"}
-            img={"ship/tansyumaru.png"}
-            owned={"兵庫県"}
-            made={"新潟造船"}
-            build={"2015年3月31日"}
-            meter={"49.87m"}
-            weight={"358t"}
-          />
-          <ShipCard
-            shipName={"北鳳丸 (5代目)"}
-            img={"ship/hokuhomaru.jpg"}
-            owned={"北海道(3校で共有)"}
-            made={"楢崎造船"}
-            build={"2001年3月9日"}
-            meter={"63.60m"}
-            weight={"664t"}
-          />
+          <p>-</p>
         </div>
       </div>
     </>

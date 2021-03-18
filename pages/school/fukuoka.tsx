@@ -6,6 +6,7 @@ import {
   ShareButton,
   Subject,
   PhotoCard,
+  BackButton,
 } from "components/UIkit";
 import Head from "next/head";
 
@@ -14,7 +15,7 @@ export default function Fukuoka() {
   const url = "https://suisam.ml/school/fukuoka";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "top.jpg"; //ページ・SNS画像
+  const image = "fukuoka/top.png"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
   const description = "水産高校総合情報サイト｜福岡県立水産高校"; //SNSなどで表示される説明
 
@@ -48,6 +49,7 @@ export default function Fukuoka() {
           content={`https://suisan.ml/school/${image}`}
         />
       </Head>
+      <BackButton link={"/school"}/>
       <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"福岡県立水産高等学校"} />

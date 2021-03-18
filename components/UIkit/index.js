@@ -9,3 +9,4 @@ export { PhotoCard } from "components/UIkit/PhotoCard";
 export { SchoolLink } from "components/UIkit/SchoolLink";
 export { FamousCard } from "components/UIkit/FamousCard";
 export { ShipCard } from "components/UIkit/ShipCard";
+export { BackButton } from 'components/UIkit/BackButton';

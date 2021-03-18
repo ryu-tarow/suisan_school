@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="bg-gray-900 text-gray-500 py-5 text-center text-sm">
+        <div className="bg-gray-700 text-gray-300 py-5 text-center text-sm">
           <ul>
             <li className="p-1">©︎2021 水産高校あるある Inc,</li>
             <a href="https://twitter.com/suisan_suisan">

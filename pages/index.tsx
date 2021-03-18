@@ -60,7 +60,7 @@ export default function Home() {
               <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
                 <SchoolLink
                   link={"/school"}
-                  img={"/school/fukuoka/top.png"}
+                  img={"/school/okinawa/top.png"}
                   title={"水産高校"}
                   description={"全国の水産高校一覧"}
                 />
@@ -75,6 +75,12 @@ export default function Home() {
                   img={"/ship/kaiyumaru.jpg"}
                   title={"実習船"}
                   description={"実習船一覧"}
+                />
+                <SchoolLink
+                  link={"/work"}
+                  img={"/noImage.png"}
+                  title={"就職先"}
+                  description={"卒業生の就職先"}
                 />
               </div>
             </div>
