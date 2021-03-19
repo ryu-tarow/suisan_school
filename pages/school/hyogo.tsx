@@ -7,6 +7,7 @@ import {
   Subject,
   PhotoCard,
   BackButton,
+  ShipCard,
 } from "components/UIkit";
 import Head from "next/head";
 
@@ -34,17 +35,23 @@ export default function Hyogo() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`https://suisan.ml/school/${image}`} />
+        <meta
+          property="og:image"
+          content={`https://suisan.ml/school/${image}`}
+        />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
 
         {/* TwitterCardの設定 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
-        <meta property="twitter:image" content={`https://suisan.ml/school/${image}`} />
+        <meta
+          property="twitter:image"
+          content={`https://suisan.ml/school/${image}`}
+        />
       </Head>
-      <BackButton link={"/school"}/>
-      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+      <BackButton link={"/school"} />
+      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"兵庫県立香住高等学校"} />
 
@@ -53,7 +60,7 @@ export default function Hyogo() {
             <SchoolData
               topImage={"/school/hyogo/top.png"}
               address={"兵庫県美方郡香美町香住区矢田40－1"}
-              station={"--"}
+              station={"JR香住駅（徒歩10分）"}
               deviationValue={40}
             />
           </div>
@@ -64,29 +71,15 @@ export default function Hyogo() {
               img={"/noImage.png"}
               subject={"普通科"}
               list01={"--"}
-              list02={""}
-              list03={""}
+              list02={"--"}
+              list03={"--"}
             />
             <Subject
               img={"/noImage.png"}
               subject={"海洋科学科"}
               list01={"オーシャンコース"}
-              list02={""}
-              list03={""}
-            />
-            <Subject
-              img={"/noImage.png"}
-              subject={"海洋科学科"}
-              list01={"アクアコース"}
-              list02={""}
-              list03={""}
-            />
-            <Subject
-              img={"/noImage.png"}
-              subject={"海洋科学科"}
-              list01={"シーフードコース"}
-              list02={""}
-              list03={""}
+              list02={"アクアコース"}
+              list03={"シーフードコース"}
             />
           </ul>
           <br />
@@ -110,6 +103,27 @@ export default function Hyogo() {
               }
             />
           </div>
+          <ListTitle text={"実習船"}/>
+          <ShipCard
+            shipName={"但州丸（6代目）"}
+            img={"/ship/tansyumaru.png"}
+            owned={"兵庫県"}
+            made={"新潟造船"}
+            build={"2015年3月31日"}
+            meter={"49.87m"}
+            weight={"358t"}
+            link={"/tansyumaru"}
+          />
+          <ShipCard
+            shipName={"しりうす（小型実習船）"}
+            img={"/ship/shiriusu.png"}
+            owned={"兵庫県"}
+            made={"--"}
+            build={"--"}
+            meter={"--"}
+            weight={"19t"}
+            link={"/"}
+          />
         </div>
         <br />
       </div>

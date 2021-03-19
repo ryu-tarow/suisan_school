@@ -1,5 +1,5 @@
 import {
-    BackButton,
+  BackButton,
   ListTitle,
   PageTitle,
   SchoolLink,
@@ -39,10 +39,10 @@ export default function School() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`${url}/${image}`} />
-          </Head>
-          <BackButton link={"/school"}/>
+      </Head>
+      <BackButton link={"/"} />
       <main>
-        <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+        <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
           <ShareButton text={text} url={url} />
           <PageTitle text={"全国の水産高校"} />
           <div className="bg-white p-2 shadow-md rounded-md mb-5">

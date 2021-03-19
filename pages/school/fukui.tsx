@@ -34,17 +34,23 @@ export default function Fukui() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`https://suisan.ml/school/${image}`} />
+        <meta
+          property="og:image"
+          content={`https://suisan.ml/school/${image}`}
+        />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
 
         {/* TwitterCardの設定 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@msrmmn" />
-        <meta property="twitter:image" content={`https://suisan.ml/school/${image}`} />
+        <meta
+          property="twitter:image"
+          content={`https://suisan.ml/school/${image}`}
+        />
       </Head>
-      <BackButton link={"/school"}/>
-      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+      <BackButton link={"/school"} />
+      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"福井県立若狭高等学校"} />
 
@@ -57,7 +63,9 @@ export default function Fukui() {
               deviationValue={42}
             />
           </div>
-          <div className="text-xs text-center p-2">*偏差値：普通科53、文理探求科64</div>
+          <div className="text-xs text-center p-2">
+            *偏差値：普通科53、文理探求科64
+          </div>
 
           <ListTitle text={"学科・コース"} />
           <ul className="grid grid-cols-2 md:grid-cols-3 m-1">
@@ -83,7 +91,7 @@ export default function Fukui() {
               list03={"海洋資源コース"}
             />
           </ul>
-          <br/>
+          <br />
           <ListTitle text={"部活動"} />
           <ul className="p-2 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6">
             <Club clubName={"スキューバダイビング部"} img={"/noImage.png"} />

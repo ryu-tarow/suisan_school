@@ -1,4 +1,4 @@
-import { PageTitle, ShareButton, ShipCard } from "components/UIkit";
+import { BackButton, PageTitle, ShareButton, ShipCard } from "components/UIkit";
 import Head from "next/head";
 
 export default function Famous() {
@@ -34,7 +34,8 @@ export default function Famous() {
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`https://suisan.ml/${image}`} />
       </Head>
-      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+      <BackButton link={"/"} />
+      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"実習船"} />
         <div className="bg-white p-2 shadow-md rounded-md mb-5">
@@ -46,33 +47,47 @@ export default function Famous() {
             build={"2010年3月30日"}
             meter={"67.74m"}
             weight={"698t"}
+            link={"/"}
           />
           <ShipCard
             shipName={"薩摩青雲丸"}
             img={"ship/satumaseiun.png"}
-            owned={"鹿児島"}
+            owned={"鹿児島県"}
             made={"新潟鐵工所"}
             build={"2002年3月15日"}
             meter={"64.25m"}
             weight={"645t"}
+            link={"/"}
           />
           <ShipCard
-            shipName={"但州丸（6代目）＊写真は5代目"}
+            shipName={"但州丸（6代目）"}
             img={"ship/tansyumaru.png"}
             owned={"兵庫県"}
             made={"新潟造船"}
             build={"2015年3月31日"}
             meter={"49.87m"}
             weight={"358t"}
+            link={"/tansyumaru"}
           />
           <ShipCard
-            shipName={"北鳳丸 (5代目)"}
+            shipName={"しりうす（小型実習船）"}
+            img={"ship/shiriusu.png"}
+            owned={"兵庫県"}
+            made={"--"}
+            build={"--"}
+            meter={"--"}
+            weight={"19t"}
+            link={"/"}
+          />
+          <ShipCard
+            shipName={"北鳳丸（5代目）"}
             img={"ship/hokuhomaru.jpg"}
-            owned={"北海道(3校で共有)"}
+            owned={"北海道"}
             made={"楢崎造船"}
             build={"2001年3月9日"}
             meter={"63.60m"}
             weight={"664t"}
+            link={"/"}
           />
         </div>
       </div>

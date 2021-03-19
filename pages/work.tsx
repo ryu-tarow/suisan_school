@@ -1,4 +1,4 @@
-import { PageTitle, ShareButton, ShipCard } from "components/UIkit";
+import { BackButton, PageTitle, ShareButton, ShipCard } from "components/UIkit";
 import Head from "next/head";
 
 export default function Famous() {
@@ -34,7 +34,8 @@ export default function Famous() {
         <meta name="twitter:site" content="@msrmmn" />
         <meta property="twitter:image" content={`https://suisan.ml/${image}`} />
       </Head>
-      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+      <BackButton link={"/"} />
+      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"就職先"} />
         <div className="bg-white p-2 shadow-md rounded-md mb-5">

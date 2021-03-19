@@ -28,7 +28,7 @@ export const FamousCard = ({
             </p>
             <img
               src={img}
-              className="w-full sm:w-80 h-56 object-cover p-2 rounded-xl"
+              className="w-full sm:w-full h-56 object-cover p-2 rounded-xl"
             />
           </div>
           <div className="px-3 pb-4 sm:text-left flex">

@@ -49,8 +49,8 @@ export default function Fukuoka() {
           content={`https://suisan.ml/school/${image}`}
         />
       </Head>
-      <BackButton link={"/school"}/>
-      <div className="mt-2.5 m-auto max-w-screen-sm w-11/12">
+      <BackButton link={"/school"} />
+      <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
         <PageTitle text={"福岡県立水産高等学校"} />
 
