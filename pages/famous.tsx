@@ -1,9 +1,7 @@
 import {
   BackButton,
   FamousCard,
-  ListTitle,
   PageTitle,
-  SchoolLink,
   ShareButton,
 } from "components/UIkit";
 import Head from "next/head";
@@ -13,7 +11,7 @@ export default function Famous() {
   const url = "https://suisan.ml/famous";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "top.jpg"; //ページ・SNS画像
+  const image = "famous/ohya.jpg"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
   const description = "水産高校総合情報サイト｜有名人"; //SNSなどで表示される説明
 

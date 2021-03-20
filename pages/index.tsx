@@ -3,8 +3,8 @@ import {
   ShareButton,
   TopButton,
   SchoolLink,
-  ListTitle,
 } from "components/UIkit";
+import { NewAdd } from "components/UIkit/NewAdd";
 import Head from "next/head";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${url}/${image}`} />
+        <meta property="og:image" content={`https://suisan.ml/${image}`} />
         <meta property="og:description" content={description} />
         <meta property="og:locale" content="ja_JP" />
 
@@ -54,9 +54,20 @@ export default function Home() {
         </div>
         <div className="w-11/12 m-auto max-w-screen-md">
           <ShareButton text={text} url={url} />
-          <p className="text-center text-sm p-5 text-red-500">
-            現在制作中につき、情報が不十分かつバグ等の検証も十分に行われておりません。2021/03
-          </p>
+          <NewAdd
+            day01={"2021年 3月"}
+            page01={"但州丸（6代目）"}
+            how01={""}
+            link01={"/ship/tansyumaru"}
+            day02={"2021年 3月"}
+            page02={"兵庫県立香住高等学校"}
+            how02={""}
+            link02={"/school/hyogo"}
+            day03={"2021年 3月"}
+            page03={"薩摩青雲丸"}
+            how03={""}
+            link03={"/ship/satsumaseiun"}
+          />
           <PageTitle text={"HOME"} />
           <div className="bg-white p-2 shadow-md rounded-md mb-5">
             <div>

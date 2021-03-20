@@ -5,7 +5,6 @@ import {
   SchoolData,
   ShareButton,
   Subject,
-  PhotoCard,
   BackButton,
 } from "components/UIkit";
 import Head from "next/head";

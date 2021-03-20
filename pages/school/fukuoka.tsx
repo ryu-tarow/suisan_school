@@ -7,6 +7,7 @@ import {
   Subject,
   PhotoCard,
   BackButton,
+  SchoolLink,
 } from "components/UIkit";
 import Head from "next/head";
 
@@ -136,6 +137,15 @@ export default function Fukuoka() {
               description={
                 "アクアライフ科で取り組んでいる、竹を使った海の再生プロジェクト。"
               }
+            />
+          </div>
+          <ListTitle text={"実習船"} />
+          <div className="my-1 grid grid-cols-2 sm:grid-cols-3">
+            <SchoolLink
+              link={"/ship/kaiyumaru"}
+              img={"/ship/kaiyumaru.jpg"}
+              title={"海友丸"}
+              description={"大型実習船"}
             />
           </div>
         </div>

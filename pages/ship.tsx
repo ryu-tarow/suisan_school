@@ -1,12 +1,12 @@
 import { BackButton, PageTitle, ShareButton, ShipCard } from "components/UIkit";
 import Head from "next/head";
 
-export default function Famous() {
+export default function Ship() {
   const text = "SUISAN｜実習船";
   const url = "https://suisan.ml/ship";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "top.jpg"; //ページ・SNS画像
+  const image = "ship/kaiyumaru.jpg"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
   const description = "水産高校総合情報サイト｜実習船"; //SNSなどで表示される説明
 
@@ -47,17 +47,17 @@ export default function Famous() {
             build={"2010年3月30日"}
             meter={"67.74m"}
             weight={"698t"}
-            link={"/"}
+            link={"/kaiyumaru"}
           />
           <ShipCard
             shipName={"薩摩青雲丸"}
-            img={"ship/satumaseiun.png"}
+            img={"ship/satsumaseiun.png"}
             owned={"鹿児島県"}
             made={"新潟鐵工所"}
             build={"2002年3月15日"}
             meter={"64.25m"}
             weight={"645t"}
-            link={"/"}
+            link={"/satsumaseiun"}
           />
           <ShipCard
             shipName={"但州丸（6代目）"}
@@ -77,7 +77,7 @@ export default function Famous() {
             build={"--"}
             meter={"--"}
             weight={"19t"}
-            link={"/"}
+            link={"/shiriusu"}
           />
           <ShipCard
             shipName={"北鳳丸（5代目）"}

@@ -35,12 +35,12 @@ export const ShipCard = ({
           />
           <div>
             <div className="flex sm:px-2 py-4">
-              <div className="px-6 text-gray-500">
-                <p className="text-xs h-5 pt-0.5">所有</p>
-                <p className="text-xs h-5 pt-0.5">造船所</p>
-                <p className="text-xs h-5 pt-0.5">竣工</p>
-                <p className="text-xs h-5 pt-0.5">全長</p>
-                <p className="text-xs h-5 pt-0.5">総トン数</p>
+              <div className="px-3 text-gray-500">
+                <p className="text-xs h-5 w-12 pt-0.5">所有</p>
+                <p className="text-xs h-5 w-12 pt-0.5">造船所</p>
+                <p className="text-xs h-5 w-12 pt-0.5">竣工</p>
+                <p className="text-xs h-5 w-12 pt-0.5">全長</p>
+                <p className="text-xs h-5 w-12 pt-0.5">総トン数</p>
               </div>
               <div className="px-3">
                 <p className="text-sm h-5">{owned}</p>

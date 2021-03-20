@@ -4,18 +4,17 @@ import {
   PageTitle,
   ShareButton,
   ShipDescription,
-  SinglePhoto,
 } from "components/UIkit";
 import Head from "next/head";
 
-export default function Tansyumaru() {
+export default function Shiriusu() {
   const text = "SUISAN｜但州丸";
   const url = "https://suisan.ml/ship/tansyumaru";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "ship/tansyumaru.png"; //ページ・SNS画像
+  const image = "ship/shiriusu.png"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
-  const description = "水産高校総合情報サイト｜但州丸"; //SNSなどで表示される説明
+  const description = "水産高校総合情報サイト｜しりうす"; //SNSなどで表示される説明
 
   return (
     <>
@@ -44,16 +43,16 @@ export default function Tansyumaru() {
       <BackButton link={"/ship"} />
       <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
-        <PageTitle text={"但州丸（6代目）"} />
+        <PageTitle text={"しりうす"} />
         <div className="rounded-md shadow-md p-2 bg-white mb-4">
           <ShipDescription
-            img={"/tansyumaru.png"}
+            img={"/shiriusu.png"}
             owned={"兵庫県"}
-            made={"新潟造船"}
-            build={"2015年3月31日"}
+            made={"--"}
+            build={"--"}
             now={"就航中"}
-            meter={"49.87m"}
-            weight={"358t"}
+            meter={"--"}
+            weight={"19t"}
             schoolName01={"兵庫県立香住高等学校"}
             link01={"/school/hyogo"}
             schoolName02={"none"}
@@ -65,22 +64,10 @@ export default function Tansyumaru() {
           />
           <ListTitle text={"概要"} />
           <p className="px-3 py-2 text-sm">
-            5代目は国際航海可能で4級海技士の資格をとることができたが、6代目からは国際船ではなくなり、5級海技士の資格をとることが目的の船となった。
+            兵庫県立香住高等学校で使われている小型実習船。
             <br />
-            6代目から、冷暖房・ウォシュレットトイレなどの設備が整っている。
-            <br />
-            先代ではできなかったイカ釣りができるようになった。
-            金曜日にカレーを食べる。
+            アクアコースの海洋観測やオーシャンコースの練習、釣り実習などに使用されている。
           </p>
-          <ListTitle text={"関連写真"} />
-          <div className="grid grid-cols-2">
-            <SinglePhoto img={"/ship/tansyumaru/tsm01.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm02.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm03.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm04.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm05.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm06.jpg"} />
-          </div>
         </div>
       </div>
     </>

@@ -4,18 +4,17 @@ import {
   PageTitle,
   ShareButton,
   ShipDescription,
-  SinglePhoto,
 } from "components/UIkit";
 import Head from "next/head";
 
-export default function Tansyumaru() {
-  const text = "SUISAN｜但州丸";
-  const url = "https://suisan.ml/ship/tansyumaru";
+export default function Satsumaseiun() {
+  const text = "SUISAN｜薩摩青雲丸";
+  const url = "https://suisan.ml/ship/satsumaseiun";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "ship/tansyumaru.png"; //ページ・SNS画像
+  const image = "ship/satsumaseiun.png"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
-  const description = "水産高校総合情報サイト｜但州丸"; //SNSなどで表示される説明
+  const description = "水産高校総合情報サイト｜薩摩青雲丸"; //SNSなどで表示される説明
 
   return (
     <>
@@ -44,43 +43,31 @@ export default function Tansyumaru() {
       <BackButton link={"/ship"} />
       <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
-        <PageTitle text={"但州丸（6代目）"} />
+        <PageTitle text={"薩摩青雲丸"} />
         <div className="rounded-md shadow-md p-2 bg-white mb-4">
           <ShipDescription
-            img={"/tansyumaru.png"}
-            owned={"兵庫県"}
-            made={"新潟造船"}
-            build={"2015年3月31日"}
+            img={"/satsumaseiun.png"}
+            owned={"鹿児島県"}
+            made={"新潟鐵工所"}
+            build={"2002年3月15日"}
             now={"就航中"}
-            meter={"49.87m"}
-            weight={"358t"}
-            schoolName01={"兵庫県立香住高等学校"}
-            link01={"/school/hyogo"}
+            meter={"64.25m"}
+            weight={"645t"}
+            schoolName01={"鹿児島県立鹿児島水産高校"}
+            link01={"/school/kagoshima"}
             schoolName02={"none"}
-            link02={"/"}
+            link02={"/nagasaki"}
             schoolName03={"none"}
-            link03={"/"}
+            link03={"/yamaguchi"}
             class01={"hidden"}
             class02={"hidden"}
           />
           <ListTitle text={"概要"} />
           <p className="px-3 py-2 text-sm">
-            5代目は国際航海可能で4級海技士の資格をとることができたが、6代目からは国際船ではなくなり、5級海技士の資格をとることが目的の船となった。
+            マグロはえ縄漁の漁業実習、航海や機関の実習、海洋観測や海洋生物の調査と研究に使用される。
             <br />
-            6代目から、冷暖房・ウォシュレットトイレなどの設備が整っている。
-            <br />
-            先代ではできなかったイカ釣りができるようになった。
-            金曜日にカレーを食べる。
+            マグロ漁の実習はハワイ沖で年に3回行なっている。
           </p>
-          <ListTitle text={"関連写真"} />
-          <div className="grid grid-cols-2">
-            <SinglePhoto img={"/ship/tansyumaru/tsm01.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm02.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm03.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm04.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm05.jpg"} />
-            <SinglePhoto img={"/ship/tansyumaru/tsm06.jpg"} />
-          </div>
         </div>
       </div>
     </>

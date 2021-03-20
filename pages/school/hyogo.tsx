@@ -7,7 +7,7 @@ import {
   Subject,
   PhotoCard,
   BackButton,
-  ShipCard,
+  SchoolLink,
 } from "components/UIkit";
 import Head from "next/head";
 
@@ -103,27 +103,21 @@ export default function Hyogo() {
               }
             />
           </div>
-          <ListTitle text={"実習船"}/>
-          <ShipCard
-            shipName={"但州丸（6代目）"}
-            img={"/ship/tansyumaru.png"}
-            owned={"兵庫県"}
-            made={"新潟造船"}
-            build={"2015年3月31日"}
-            meter={"49.87m"}
-            weight={"358t"}
-            link={"/tansyumaru"}
-          />
-          <ShipCard
-            shipName={"しりうす（小型実習船）"}
-            img={"/ship/shiriusu.png"}
-            owned={"兵庫県"}
-            made={"--"}
-            build={"--"}
-            meter={"--"}
-            weight={"19t"}
-            link={"/"}
-          />
+          <ListTitle text={"実習船"} />
+          <div className="my-1 grid grid-cols-2 sm:grid-cols-3">
+            <SchoolLink
+              link={"/ship/tansyumaru"}
+              img={"/ship/tansyumaru.png"}
+              title={"但州丸"}
+              description={"大型実習船"}
+            />
+            <SchoolLink
+              link={"/ship/shiriusu"}
+              img={"/ship/shiriusu.png"}
+              title={"しりうす"}
+              description={"小型実習船"}
+            />
+          </div>
         </div>
         <br />
       </div>

@@ -1,12 +1,12 @@
-import { BackButton, PageTitle, ShareButton, ShipCard } from "components/UIkit";
+import { BackButton, PageTitle, ShareButton } from "components/UIkit";
 import Head from "next/head";
 
-export default function Famous() {
+export default function Work() {
   const text = "SUISAN｜実習船";
   const url = "https://suisan.ml/ship";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "top.jpg"; //ページ・SNS画像
+  const image = "noImage.png"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
   const description = "水産高校総合情報サイト｜実習船"; //SNSなどで表示される説明
 
