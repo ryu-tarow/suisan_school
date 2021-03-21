@@ -87,7 +87,7 @@ export default function Ship() {
             build={"2001年3月9日"}
             meter={"63.60m"}
             weight={"664t"}
-            link={"/"}
+            link={"/hokuhomaru"}
           />
         </div>
       </div>

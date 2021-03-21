@@ -56,9 +56,9 @@ export default function Kaiyumaru() {
             schoolName01={"福岡県立水産高等学校"}
             link01={"/school/fukuoka"}
             schoolName02={"長崎県立長崎鶴洋高等学校"}
-            link02={"/nagasaki"}
+            link02={"/school/nagasaki"}
             schoolName03={"山口県立大津緑洋高等学校"}
-            link03={"/yamaguchi"}
+            link03={"/school/yamaguchi"}
             class01={""}
             class02={""}
           />

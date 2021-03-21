@@ -7,14 +7,14 @@ import {
 } from "components/UIkit";
 import Head from "next/head";
 
-export default function Shiriusu() {
-  const text = "SUISAN｜但州丸";
-  const url = "https://suisan.ml/ship/shiriusu";
+export default function Hokuhomaru() {
+  const text = "SUISAN｜北鳳丸";
+  const url = "https://suisan.ml/ship/hokuhomaru";
 
   const title = "SUISAN"; //サイトタイトル
-  const image = "ship/shiriusu.png"; //ページ・SNS画像
+  const image = "ship/hokuhomaru.jpg"; //ページ・SNS画像
   const pageTitle = "SUISAN"; //ページタイトル
-  const description = "水産高校総合情報サイト｜しりうす"; //SNSなどで表示される説明
+  const description = "水産高校総合情報サイト｜北鳳丸"; //SNSなどで表示される説明
 
   return (
     <>
@@ -43,30 +43,30 @@ export default function Shiriusu() {
       <BackButton link={"/ship"} />
       <div className="mt-2.5 m-auto max-w-screen-md w-11/12">
         <ShareButton text={text} url={url} />
-        <PageTitle text={"しりうす"} />
+        <PageTitle text={"北鳳丸（5代目）"} />
         <div className="rounded-md shadow-md p-2 bg-white mb-4">
           <ShipDescription
-            img={"/shiriusu.png"}
-            owned={"兵庫県"}
-            made={"--"}
-            build={"--"}
+            img={"/hokuhomaru.jpg"}
+            owned={"北海道"}
+            made={"楢崎造船（*現在は函館どっく）"}
+            build={"2001年3月9日"}
             now={"就航中"}
-            meter={"--"}
-            weight={"19t"}
-            schoolName01={"兵庫県立香住高等学校"}
-            link01={"/school/hyogo"}
-            schoolName02={"none"}
-            link02={"/"}
-            schoolName03={"none"}
-            link03={"/"}
-            class01={"hidden"}
-            class02={"hidden"}
+            meter={"63.60ｍ"}
+            weight={"664t"}
+            schoolName01={"北海道小樽水産高等学校"}
+            link01={"/school/otaru"}
+            schoolName02={"北海道函館水産高等学校"}
+            link02={"/school/hakodate"}
+            schoolName03={"北海道厚岸翔洋高等学校"}
+            link03={"/school/akkeshi"}
+            class01={""}
+            class02={""}
           />
           <ListTitle text={"概要"} />
           <p className="px-3 py-2 text-sm">
-            兵庫県立香住高等学校で使われている小型実習船。
+            マグロ延縄漁の漁業実習、航海や機関の実習、またマグロ漁の実習はハワイ近海で行なう。
             <br />
-            アクアコースの海洋観測やオーシャンコースの練習、釣り実習などに使用されている。
+            一般的な海洋観測や生物の調査の他に、特に浮魚類の資源調査、サンマやスケトウダラなどの重要水産資源の調査をする。
           </p>
         </div>
       </div>

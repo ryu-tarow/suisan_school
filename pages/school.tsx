@@ -93,6 +93,12 @@ export default function School() {
                   title={"沖縄県立水産高校"}
                   description={"--"}
                 />
+                <SchoolLink
+                  link={"/school/nagasaki"}
+                  img={"/school/nagasaki/top.png"}
+                  title={"長崎県立鶴洋高校"}
+                  description={"--"}
+                />
               </div>
             </div>
           </div>
