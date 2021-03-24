@@ -47,15 +47,32 @@ export default function School() {
           <PageTitle text={"全国の水産高校"} />
           <div className="bg-white p-2 shadow-md rounded-md mb-5">
             {/*
-             **北海道地方**
+             **北海道地方**V
              **東北地方**
              **関東地方**
              **中部地方**V
              **近畿地方**V
-             **中国地方**
+             **中国地方**V
              **四国地方**
              **九州地方**V
              */}
+            <div>
+              <ListTitle text={"北海道地方"} />
+              <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
+                <SchoolLink
+                  link={"/school/otaru"}
+                  img={"/school/otaru/top.png"}
+                  title={"北海道小樽水産高校"}
+                  description={"---"}
+                />
+                <SchoolLink
+                  link={"/school/hakodate"}
+                  img={"/school/hakodate/top.png"}
+                  title={"北海道函館水産高校"}
+                  description={"---"}
+                />
+              </div>
+            </div>
             <div>
               <ListTitle text={"中部地方"} />
               <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
@@ -75,6 +92,17 @@ export default function School() {
                   img={"/school/hyogo/top.png"}
                   title={"兵庫県立香住高校"}
                   description={"---"}
+                />
+              </div>
+            </div>
+            <div>
+              <ListTitle text={"中国地方"} />
+              <div className="grid grid-cols-2 sm:grid-cols-3 text-sm">
+                <SchoolLink
+                  link={"/school/yamaguchi"}
+                  img={"/school/yamaguchi/top.png"}
+                  title={"山口県立大津緑洋高校"}
+                  description={"2011年に同市内県立高校3校が統合され新設。"}
                 />
               </div>
             </div>
