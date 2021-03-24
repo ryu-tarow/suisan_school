@@ -88,15 +88,21 @@ export default function School() {
                   description={"海のすぐ隣にある、福岡県の水産高校。"}
                 />
                 <SchoolLink
-                  link={"/school/okinawa"}
-                  img={"/school/okinawa/top.png"}
-                  title={"沖縄県立水産高校"}
-                  description={"--"}
-                />
-                <SchoolLink
                   link={"/school/nagasaki"}
                   img={"/school/nagasaki/top.png"}
                   title={"長崎県立鶴洋高校"}
+                  description={"--"}
+                />
+                <SchoolLink
+                  link={"/school/kagoshima"}
+                  img={"/school/kagoshima/top.png"}
+                  title={"鹿児島県立水産高校"}
+                  description={"--"}
+                />
+                <SchoolLink
+                  link={"/school/okinawa"}
+                  img={"/school/okinawa/top.png"}
+                  title={"沖縄県立水産高校"}
                   description={"--"}
                 />
               </div>
